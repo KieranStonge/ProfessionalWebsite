@@ -1,0 +1,314 @@
+/* General body styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Grey text for general body for better contrast */
+    background-color: #cd7f32; /* Light grey background maintains a subtle, professional look */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 10px;
+    display: flex;
+    align-items: flex-end; /* Ensure items align at the bottom */
+    text-align: left;
+  }
+  
+  header .logo {
+    margin-left: 20px;
+    flex: 0; /* Prevent logo from growing */
+    align-self: flex-end; /* Align logo at the bottom */
+  }
+  
+  header .logo img {
+    max-height: 120px; /* Adjust based on actual logo size */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  nav {
+    flex-grow: 1;
+    padding-left: 20px; /* Space between logo and nav */
+    align-self: flex-end; /* Align nav at the bottom */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: flex-end; /* Align nav items at the bottom */
+  }
+  
+  nav ul li {
+    margin: 0 20px; /* Space between navigation items */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-weight: bold;
+  }
+
+  nav ul li a.current {
+    background-color: #cd7f32; /* Highlight the current tab */
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 20px;
+    background: white; /* White background for main content area for clarity and focus */
+    margin-top: 20px;
+  }
+  
+  .intro {
+    background-color: #000000; /* Black background for the intro section for striking contrast */
+    color: white; /* White text for impact, against the black background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .intro h1 {
+    color: white; /* Maintaining white text for headings */
+  }
+  
+  /* Services section styles */
+  .services-highlight {
+    background-color: black; /* Dark grey background for services to soften the overall look */
+    color: #ffffff; /* White text for better readability */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .service {
+    background: #cd7f32; /* Black background for service cards for uniformity */
+    color: #ffffff; /* White text for contrast and readability */
+    border: 1px solid white; /* White border to tie in the color scheme subtly */
+    padding: 15px;
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .service h3 {
+    color: white; /* White text for service headings to maintain consistency */
+  }
+  
+  /* Testimonials and Call to action styles */
+  .testimonials,
+  .call-to-action {
+    background-color: #000000; /* Black background for these sections for consistency and emphasis */
+    color: #ffffff; /* White text for clarity */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .btn {
+    background-color: white; /* White background for buttons for a vibrant, noticeable look */
+    color: #000; /* Black text for best visibility on gold */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #e6c200; /* Darker gold on hover for a subtle interaction cue */
+  }
+  
+/* Customer Comments Section */
+.customer-comments {
+    background-color: #f5f5f5; /* Light grey background for comments section */
+    color: #333; /* Dark grey text for better readability */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: right; /* Align text to the right */
+}
+
+.customer-comments h2 {
+    margin-top: 0; /* Remove top margin for h2 */
+}
+
+.customer-comments p {
+    margin-bottom: 20px; /* Add some space below the paragraph */
+    text-align: left; /* Align text within paragraph to the left */
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align form items to the right */
+}
+
+.comment-form textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+    padding: 10px; /* Add padding for better spacing */
+    margin-bottom: 10px; /* Add space between textarea and button */
+}
+
+.comment-form .btn {
+    padding: 10px 20px; /* Add padding to the button */
+}
+
+  /* Newsletter form customization */
+  .newsletter-form {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Adjust the space between elements */
+    border-bottom: 2px solid white; /* Adds the white underline */
+    padding-bottom: 10px; /* Space above the underline */
+    color: white; /* Ensures text and icons are white */
+    width: 80%; /* Adjusted width */
+    margin-left: auto; /* Centralize if needed */
+    margin-right: 20px; /* Add margin to the right to move form away from the edge */
+  }
+  
+  .newsletter-form i {
+    font-size: 20px; /* Adjust size as necessary */
+  }
+  
+  .newsletter-form input[type="email"] {
+    background: none;
+    border: none;
+    outline: none;
+    color: white; /* Text color */
+    padding: 10px; /* Increase padding for better text visibility */
+    margin-right: 10px; /* Increase right margin to push the arrow to the left */
+    width: calc(
+      100% - 80px
+    ); /* Adjust width to ensure text fits, considering icon sizes */
+    font-size: 16px; /* Adjust font size as needed */
+    box-sizing: border-box; /* Ensures padding doesn't affect the actual size */
+  }
+  
+  .newsletter-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex; /* Ensure the button content aligns correctly */
+    align-items: center; /* Align the arrow icon vertically */
+    padding: 10px; /* Adjust padding to ensure size matches other elements */
+    margin-left: 0; /* Adjust margin to move button closer to input */
+  }
+  
+  /* Adjust button icon size if necessary */
+  .newsletter-form button i {
+    font-size: 24px; /* Adjust size as necessary */
+    color: white; /* Ensure arrow icon is white */
+  }
+  
+  /* Add focus style for input to maintain underline */
+  .newsletter-form input[type="email"]:focus {
+    border-bottom: 2px solid white; /* Adds the white underline on focus */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333333; /* Dark grey for footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; /* Align footer content */
+    align-items: center; /* Vertically center items */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  }
+  
+  footer p {
+    margin: 0; /* Remove margin for copyright text */
+    flex: 1; /* Allow copyright text to take up necessary space */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center;
+    width: 100%; /* Full width to utilize available space */
+    max-width: 1200px; /* Max width for content inside footer */
+    margin: 0 auto; /* Centering the footer content if needed */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center; /* Center social icons */
+    flex: 1; /* Allows icons to take necessary space */
+  }
+  
+  .social-icons img {
+    height: 24px; /* Set height for social icons */
+    width: 24px; /* Set width for social icons */
+    margin: 0 10px; /* Margin between icons */
+  }
+  
+  .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: end; /* Align newsletter section to the right */
+    flex: 1; /* Allows newsletter to take necessary space */
+  }
+  
+  /* Responsive styles for better mobile experience */
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .social-icons,
+    .newsletter {
+      justify-content: center;
+      margin-top: 20px;
+      flex-basis: 100%; /* Take full width on smaller screens */
+    }
+  }
+  
+  /* Responsive styles adjustments for better mobile experience */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    header .logo,
+    nav {
+      margin-bottom: 10px;
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+    .services-container {
+      flex-direction: column;
+    }
+    .service {
+      margin-bottom: 20px;
+      flex-basis: auto; /* Adjust service cards for mobile */
+    }
+    footer {
+      flex-direction: column; /* Stack footer content vertically on smaller screens */
+    }
+  }
+  

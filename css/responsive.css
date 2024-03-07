@@ -1,0 +1,60 @@
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0; /* Increase padding for better spacing */
+  }
+
+  header .logo,
+  nav {
+    margin: 0 auto; /* Center logo and nav on small screens */
+    padding: 0;
+  }
+
+  header .logo img {
+    max-height: 80px; /* Reduce logo size for smaller screens */
+  }
+
+  nav {
+    width: 100%; /* Full width for the nav container */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block; /* Stack nav items vertically */
+    margin: 10px 0; /* Add more space between nav items */
+  }
+
+  nav ul li a {
+    font-size: 18px; /* Increase font size for better readability */
+  }
+
+  /* Adjust main content padding for smaller screens */
+  main {
+    padding: 15px;
+  }
+
+  /* Adjust sections for smaller screens */
+  .services-container {
+    flex-direction: column; /* Stack service items vertically */
+  }
+
+  .service {
+    margin-bottom: 20px; /* Add space between stacked service items */
+  }
+
+  .intro,
+  .services-highlight,
+  .testimonials,
+  .call-to-action {
+    /* Ensure these sections don't have too much width on small screens */
+    margin: 20px 10px;
+    padding: 20px;
+  }
+}
